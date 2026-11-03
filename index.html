@@ -135,6 +135,7 @@ a:focus-visible,button:focus-visible,.shot:focus-visible{outline:2px solid #d5a2
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
   <symbol id="i-wa" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"/><path fill="currentColor" d="M9 7.5c-.3 0-.8.1-1.1.7-.4.8-.2 2 .9 3.5 1.2 1.7 2.7 2.700 4.200 3.100 1 .3 1.900-.1 2.200-.9.100-.4.100-.7 0-.8l-1.800-.9c-.2-.1-.4 0-.5.200l-.6.700c-.1.100-.3.100-.5 0-1-.5-1.800-1.200-2.300-2.200-.1-.2 0-.3.100-.4l.4-.5c.1-.2.100-.3 0-.5l-.8-1.800c-.1-.3-.3-.5-.6-.5z"/></symbol>
+  <symbol id="i-max" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5c-5.300 0-9.500 3.900-9.500 8.900 0 2.200.8 4.200 2.100 5.700-.1 1.200-.5 2.400-1.300 3.300 1.700.2 3.200-.4 4.300-1.300 1.300.6 2.700.9 4.400.9 5.300 0 9.500-3.900 9.500-8.900S17.300 2.500 12 2.500z"/><path fill="#fff" d="M7.500 14.500v-5l2.200 3 2.300-3v5h-1.300v-2.700l-1 1.400-1-1.400v2.700zm6.300 0 2.100-5h1.200l-2.100 5z" transform="translate(.4 .3)"/></symbol>
   <symbol id="i-sms" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M8 9h8M8 13h5"/></symbol>
   <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></symbol>
   <symbol id="i-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
@@ -162,6 +163,7 @@ a:focus-visible,button:focus-visible,.shot:focus-visible{outline:2px solid #d5a2
     <div class="flex items-center gap-3">
       <a href="tel:+79231375693" class="hidden sm:flex items-center gap-2 text-sm font-semibold"><svg class="w-4 h-4 text-brass"><use href="#i-phone"/></svg>8 (923) 137-56-93</a>
       <a href="#contacts" class="hidden sm:inline-block bg-white text-graphite text-sm font-semibold px-4 py-2 rounded-full hover:bg-brass transition">Связаться</a>
+      <a href="tel:+79231375693" class="sm:hidden w-10 h-10 grid place-items-center rounded-full bg-brass text-graphite" aria-label="Позвонить"><svg class="w-5 h-5"><use href="#i-phone"/></svg></a>
       <button id="burger" class="lg:hidden p-2 -mr-2" aria-label="Открыть меню" aria-expanded="false"><svg class="w-7 h-7"><use href="#i-menu"/></svg></button>
     </div>
   </div>
@@ -177,7 +179,7 @@ a:focus-visible,button:focus-visible,.shot:focus-visible{outline:2px solid #d5a2
 <section class="pt-28 lg:pt-32 pb-12 lg:pb-20">
   <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-12 gap-10 items-center">
     <div class="lg:col-span-6">
-      <h1 class="text-[2rem] leading-[1.1] sm:text-5xl font-medium">
+      <h1 class="text-[1.75rem] leading-[1.12] sm:text-5xl font-medium">
         Ковка на заказ в Сузуне и Новосибирской области <span class="text-graphite/45">— сделаем ваш участок уютным и стильным</span>
       </h1>
       <p class="mt-7 max-w-xl text-lg text-graphite/75 leading-relaxed">
@@ -190,16 +192,16 @@ a:focus-visible,button:focus-visible,.shot:focus-visible{outline:2px solid #d5a2
     </div>
     <div class="lg:col-span-6 relative">
       <div class="shot aspect-[696/492]"><img src="./images/kovka-hero.jpg" alt="Кованые изделия на заказ: козырёк, заборы, ворота, лавочки, мангал и мостик"></div>
-      <div class="absolute -bottom-5 left-4 right-4 sm:left-auto sm:-left-8 sm:right-auto sm:w-72 bg-white rounded-md p-4 shadow-xl text-sm">
+      <div class="mt-4 sm:mt-0 sm:absolute sm:-bottom-5 sm:-left-8 sm:w-72 bg-white rounded-md p-4 shadow-xl text-sm">
         <p class="font-semibold">Оставьте заявку прямо сейчас</p>
         <p class="text-graphite/65 mt-1">Рассчитаем стоимость и подскажем лучшие решения для вашего участка.</p>
       </div>
     </div>
   </div>
-  <div class="max-w-7xl mx-auto px-5 mt-16 grid grid-cols-3 gap-4 border-t border-graphite/15 pt-8">
-    <div><p class="text-2xl sm:text-4xl font-light">Качественный металл</p><p class="text-sm text-graphite/65 mt-2">прочная основа для каждого изделия</p></div>
-    <div><p class="text-2xl sm:text-4xl font-light">Аккуратная сварка</p><p class="text-sm text-graphite/65 mt-2">чистые швы и точная геометрия</p></div>
-    <div><p class="text-2xl sm:text-4xl font-light">Надёжное покрытие</p><p class="text-sm text-graphite/65 mt-2">защита металла на долгие годы</p></div>
+  <div class="max-w-7xl mx-auto px-5 mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-4 border-t border-graphite/15 pt-8">
+    <div><p class="text-2xl lg:text-4xl font-light">Качественный металл</p><p class="text-sm text-graphite/65 mt-2">прочная основа для каждого изделия</p></div>
+    <div><p class="text-2xl lg:text-4xl font-light">Аккуратная сварка</p><p class="text-sm text-graphite/65 mt-2">чистые швы и точная геометрия</p></div>
+    <div><p class="text-2xl lg:text-4xl font-light">Надёжное покрытие</p><p class="text-sm text-graphite/65 mt-2">защита металла на долгие годы</p></div>
   </div>
 </section>
 
@@ -225,27 +227,27 @@ a:focus-visible,button:focus-visible,.shot:focus-visible{outline:2px solid #d5a2
     <h2 class="text-4xl sm:text-5xl font-medium max-w-2xl leading-tight">Принимаем заявки на изготовление</h2>
     <div id="catalogGrid" class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <article class="bg-white rounded-md overflow-hidden shadow-[0_14px_30px_-18px_rgba(27,29,31,.55)]">
-        <div class="shot aspect-[4/3] !rounded-none"><img src="./images/work-8.jpg" alt="Кованый мангал на заказ — Сузун, Новосибирская область" width="800" height="600" loading="lazy"><span class="cap">Кованые мангалы на заказ</span></div>
+        <div class="shot aspect-[4/3] !rounded-none"><img src="./images/work-8.jpg" alt="Кованый мангал на заказ — Сузун, Новосибирская область" width="800" height="600" loading="lazy"></div>
         <div class="p-6"><h3 class="text-xl font-semibold">Кованые мангалы на заказ</h3><p class="mt-2 text-graphite/65 text-[15px] leading-relaxed">Чтобы шашлыки удавались каждый раз.</p></div>
       </article>
       <article class="bg-white rounded-md overflow-hidden shadow-[0_14px_30px_-18px_rgba(27,29,31,.55)]">
-        <div class="shot aspect-[4/3] !rounded-none"><img src="./images/work-3.jpg" alt="Кованая подставка для цветов на заказ — Сузун, Новосибирская область" width="800" height="600" loading="lazy"><span class="cap">Кованые кашпо под цветы</span></div>
+        <div class="shot aspect-[4/3] !rounded-none"><img src="./images/work-3.jpg" alt="Кованая подставка для цветов на заказ — Сузун, Новосибирская область" width="800" height="600" loading="lazy"></div>
         <div class="p-6"><h3 class="text-xl font-semibold">Кованые кашпо под цветы</h3><p class="mt-2 text-graphite/65 text-[15px] leading-relaxed">Изящные детали для вашего сада.</p></div>
       </article>
       <article class="bg-white rounded-md overflow-hidden shadow-[0_14px_30px_-18px_rgba(27,29,31,.55)]">
-        <div class="shot aspect-[4/3] !rounded-none"><img src="./images/work-2.jpg" alt="Кованая скамейка со спинкой на заказ — Сузун, Новосибирская область" width="800" height="600" loading="lazy"><span class="cap">Кованые скамейки и лавочки</span></div>
+        <div class="shot aspect-[4/3] !rounded-none"><img src="./images/work-2.jpg" alt="Кованая скамейка со спинкой на заказ — Сузун, Новосибирская область" width="800" height="600" loading="lazy"></div>
         <div class="p-6"><h3 class="text-xl font-semibold">Кованые скамейки и лавочки</h3><p class="mt-2 text-graphite/65 text-[15px] leading-relaxed">Для спокойных вечеров на свежем воздухе.</p></div>
       </article>
       <article class="bg-white rounded-md overflow-hidden shadow-[0_14px_30px_-18px_rgba(27,29,31,.55)]">
-        <div class="shot aspect-[4/3] !rounded-none"><img src="./images/kovka-fence.jpg" alt="Кованый забор и ворота на заказ — Сузун, Новосибирская область" width="800" height="600" loading="lazy"><span class="cap">Кованые заборы и лестницы</span></div>
+        <div class="shot aspect-[4/3] !rounded-none"><img src="./images/kovka-fence.jpg" alt="Кованый забор и ворота на заказ — Сузун, Новосибирская область" width="800" height="600" loading="lazy"></div>
         <div class="p-6"><h3 class="text-xl font-semibold">Кованые заборы и лестницы</h3><p class="mt-2 text-graphite/65 text-[15px] leading-relaxed">Надёжно, прочно, красиво.</p></div>
       </article>
       <article class="bg-white rounded-md overflow-hidden shadow-[0_14px_30px_-18px_rgba(27,29,31,.55)]">
-        <div class="shot aspect-[4/3] !rounded-none"><img src="./images/work-10.jpg" alt="Кованый крест на заказ — Сузун, Новосибирская область" width="800" height="600" loading="lazy"><span class="cap">Ритуальные изделия: кресты и оградки</span></div>
+        <div class="shot aspect-[4/3] !rounded-none"><img src="./images/work-10.jpg" alt="Кованый крест на заказ — Сузун, Новосибирская область" width="800" height="600" loading="lazy"></div>
         <div class="p-6"><h3 class="text-xl font-semibold">Ритуальные изделия: кресты и оградки</h3><p class="mt-2 text-graphite/65 text-[15px] leading-relaxed">Кресты, оградки, лавочки — с уважением и вниманием к деталям.</p></div>
       </article>
       <article class="bg-white rounded-md overflow-hidden shadow-[0_14px_30px_-18px_rgba(27,29,31,.55)]">
-        <div class="shot aspect-[4/3] !rounded-none"><img src="./images/work-4.jpg" alt="Кованый козырёк над входом на заказ — Сузун, Новосибирская область" width="800" height="600" loading="lazy"><span class="cap">Козырьки и многое другое</span></div>
+        <div class="shot aspect-[4/3] !rounded-none"><img src="./images/work-4.jpg" alt="Кованый козырёк над входом на заказ — Сузун, Новосибирская область" width="800" height="600" loading="lazy"></div>
         <div class="p-6"><h3 class="text-xl font-semibold">Козырьки и многое другое</h3><p class="mt-2 text-graphite/65 text-[15px] leading-relaxed">Козырьки, мостики, беседки — по вашим эскизам.</p></div>
       </article>
     </div>
@@ -260,15 +262,15 @@ a:focus-visible,button:focus-visible,.shot:focus-visible{outline:2px solid #d5a2
       <p class="text-graphite/65 max-w-sm">Нажмите на фото, чтобы открыть крупнее.</p>
     </div>
     <div id="galleryGrid" class="mt-10 grid grid-cols-2 md:grid-cols-4 grid-flow-dense auto-rows-[150px] sm:auto-rows-[200px] md:auto-rows-[230px] gap-3 sm:gap-4">
-      <button type="button" data-i="0" class="shot col-span-2 row-span-2" aria-label="Открыть: Садовые качели с навесом"><img src="./images/work-1.jpg" alt="Садовые качели с навесом — кованое изделие на заказ" loading="lazy"><span class="cap text-left">Садовые качели с навесом</span></button>
-      <button type="button" data-i="1" class="shot col-span-2" aria-label="Открыть: Кованая скамья с подлокотниками"><img src="./images/work-2.jpg" alt="Кованая скамья с подлокотниками — кованое изделие на заказ" loading="lazy"><span class="cap text-left">Кованая скамья с подлокотниками</span></button>
-      <button type="button" data-i="2" class="shot row-span-2" aria-label="Открыть: Столик с кованым основанием"><img src="./images/work-3.jpg" alt="Столик с кованым основанием — кованое изделие на заказ" loading="lazy"><span class="cap text-left">Столик с кованым основанием</span></button>
-      <button type="button" data-i="3" class="shot col-span-2" aria-label="Открыть: Арочный мостик с ковкой"><img src="./images/work-6.jpg" alt="Арочный мостик с ковкой — кованое изделие на заказ" loading="lazy"><span class="cap text-left">Арочный мостик с ковкой</span></button>
-      <button type="button" data-i="4" class="shot row-span-2" aria-label="Открыть: Печь с литым львом"><img src="./images/work-8.jpg" alt="Печь с литым львом — кованое изделие на заказ" loading="lazy"><span class="cap text-left">Печь с литым львом</span></button>
-      <button type="button" data-i="5" class="shot row-span-2" aria-label="Открыть: Кованый крест"><img src="./images/work-10.jpg" alt="Кованый крест — кованое изделие на заказ" loading="lazy"><span class="cap text-left">Кованый крест</span></button>
-      <button type="button" data-i="6" class="shot row-span-2" aria-label="Открыть: Дровница для камина"><img src="./images/work-9.jpg" alt="Дровница для камина — кованое изделие на заказ" loading="lazy"><span class="cap text-left">Дровница для камина</span></button>
-      <button type="button" data-i="7" class="shot row-span-2" aria-label="Открыть: Козырёк и перила крыльца"><img src="./images/work-5.jpg" alt="Козырёк и перила крыльца — кованое изделие на заказ" loading="lazy"><span class="cap text-left">Козырёк и перила крыльца</span></button>
-      <button type="button" data-i="8" class="shot col-span-2" aria-label="Открыть: Мостик: узорные вставки"><img src="./images/work-7.jpg" alt="Мостик: узорные вставки — кованое изделие на заказ" loading="lazy"><span class="cap text-left">Мостик: узорные вставки</span></button>
+      <button type="button" data-i="0" class="shot col-span-2 md:col-span-2 md:row-span-2" aria-label="Открыть: Садовые качели с навесом"><img src="./images/work-1.jpg" alt="Садовые качели с навесом — кованое изделие на заказ" loading="lazy"><span class="cap text-left">Садовые качели с навесом</span></button>
+      <button type="button" data-i="1" class="shot md:col-span-2" aria-label="Открыть: Кованая скамья с подлокотниками"><img src="./images/work-2.jpg" alt="Кованая скамья с подлокотниками — кованое изделие на заказ" loading="lazy"><span class="cap text-left">Кованая скамья с подлокотниками</span></button>
+      <button type="button" data-i="2" class="shot md:row-span-2" aria-label="Открыть: Столик с кованым основанием"><img src="./images/work-3.jpg" alt="Столик с кованым основанием — кованое изделие на заказ" loading="lazy"><span class="cap text-left">Столик с кованым основанием</span></button>
+      <button type="button" data-i="3" class="shot md:col-span-2" aria-label="Открыть: Арочный мостик с ковкой"><img src="./images/work-6.jpg" alt="Арочный мостик с ковкой — кованое изделие на заказ" loading="lazy"><span class="cap text-left">Арочный мостик с ковкой</span></button>
+      <button type="button" data-i="4" class="shot md:row-span-2" aria-label="Открыть: Печь с литым львом"><img src="./images/work-8.jpg" alt="Печь с литым львом — кованое изделие на заказ" loading="lazy"><span class="cap text-left">Печь с литым львом</span></button>
+      <button type="button" data-i="5" class="shot md:row-span-2" aria-label="Открыть: Кованый крест"><img src="./images/work-10.jpg" alt="Кованый крест — кованое изделие на заказ" loading="lazy"><span class="cap text-left">Кованый крест</span></button>
+      <button type="button" data-i="6" class="shot md:row-span-2" aria-label="Открыть: Дровница для камина"><img src="./images/work-9.jpg" alt="Дровница для камина — кованое изделие на заказ" loading="lazy"><span class="cap text-left">Дровница для камина</span></button>
+      <button type="button" data-i="7" class="shot md:row-span-2" aria-label="Открыть: Козырёк и перила крыльца"><img src="./images/work-5.jpg" alt="Козырёк и перила крыльца — кованое изделие на заказ" loading="lazy"><span class="cap text-left">Козырёк и перила крыльца</span></button>
+      <button type="button" data-i="8" class="shot md:col-span-2" aria-label="Открыть: Мостик: узорные вставки"><img src="./images/work-7.jpg" alt="Мостик: узорные вставки — кованое изделие на заказ" loading="lazy"><span class="cap text-left">Мостик: узорные вставки</span></button>
     </div>
   </div>
 </section>
@@ -312,9 +314,9 @@ a:focus-visible,button:focus-visible,.shot:focus-visible{outline:2px solid #d5a2
         <span class="w-16 h-16 shrink-0 rounded-full bg-white/20 grid place-items-center"><svg class="w-9 h-9"><use href="#i-wa"/></svg></span>
         <span><span class="block text-sm text-white/80">Мессенджер</span><span class="block text-xl font-semibold mt-1">Написать в WhatsApp</span></span>
       </a>
-      <a href="sms:+79231375693" class="group rounded-lg p-7 flex md:flex-col gap-5 items-center md:items-start text-white hover:-translate-y-1 transition shadow-xl" style="background:linear-gradient(135deg,#a8742f,#6e4a1c)">
-        <span class="w-16 h-16 shrink-0 rounded-full bg-white/20 grid place-items-center"><svg class="w-9 h-9"><use href="#i-sms"/></svg></span>
-        <span><span class="block text-sm text-white/80">Сообщение</span><span class="block text-xl font-semibold mt-1">Отправить SMS</span></span>
+      <a href="https://max.ru/u/f9LHodD0cOKF666kxC0jTq6GO2wF7HJy1al__77ry5A2pJREfBpoglTVGoc" target="_blank" rel="noopener" class="group rounded-lg p-7 flex md:flex-col gap-5 items-center md:items-start text-white hover:-translate-y-1 transition shadow-xl" style="background:linear-gradient(135deg,#2f6bff,#8a3ffc)">
+        <span class="w-16 h-16 shrink-0 rounded-full bg-white/20 grid place-items-center"><svg class="w-9 h-9"><use href="#i-max"/></svg></span>
+        <span><span class="block text-sm text-white/80">Мессенджер</span><span class="block text-xl font-semibold mt-1">Написать в MAX</span></span>
       </a>
     </div>
   </div>
@@ -325,7 +327,7 @@ a:focus-visible,button:focus-visible,.shot:focus-visible{outline:2px solid #d5a2
   <div class="max-w-7xl mx-auto px-5 py-10 grid sm:grid-cols-3 gap-8">
     <div><p class="font-extrabold text-white text-lg">Ковка<span class="text-brass">.</span>на заказ</p><p class="mt-3 max-w-xs">Изделия из металла на заказ в Сузуне и по всей Новосибирской области.</p></div>
     <div><p class="text-white font-semibold">Контакты</p><p class="mt-3"><a href="tel:+79231375693" class="hover:text-white">8 (923) 137-56-93</a></p><address class="mt-1 not-italic">Новосибирская область, Сузунский район, рп Сузун</address><p class="mt-1">Андрей</p></div>
-    <div><p class="text-white font-semibold">Написать</p><p class="mt-3"><a href="https://wa.me/79231375693" class="hover:text-white">WhatsApp</a></p><p class="mt-1"><a href="sms:+79231375693" class="hover:text-white">SMS</a></p></div>
+    <div><p class="text-white font-semibold">Написать</p><p class="mt-3"><a href="https://wa.me/79231375693" class="hover:text-white">WhatsApp</a></p><p class="mt-1"><a href="https://max.ru/u/f9LHodD0cOKF666kxC0jTq6GO2wF7HJy1al__77ry5A2pJREfBpoglTVGoc" target="_blank" rel="noopener" class="hover:text-white">MAX</a></p></div>
   </div>
   <div class="border-t border-white/10 py-5 text-center text-xs text-white/40">© 2026 Ковка на заказ. Все права защищены.</div>
 </footer>
